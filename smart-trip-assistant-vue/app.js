@@ -270,7 +270,7 @@ createApp({
      }
      // 地图与距离
      function getLocation(address) {
-       const apiKey = "d6252339014b34205c7ab52961b96dd1";
+       const apiKey = "YOURKEY";
        return fetch(`https://restapi.amap.com/v3/geocode/geo?key=${apiKey}&address=${encodeURIComponent(address)}`)
          .then(res=>res.json())
          .then(data=>{
